@@ -8,10 +8,12 @@ _You may run it using this steps:_
 ``` export DJANGO_SECRET_KEY=<your_value>```
 
 * Run commands to create the database tables:
+
 ```python manage.py makemigrations```
 
 ```python manage.py migrate```
 * Create a superuser:
+
 ```python manage.py createsuperuser```
 _You should enter username, email and password. For example: ```admin, admin@example.com, <your_password>```._
 * Run server:
@@ -34,6 +36,7 @@ _But polls page has no question yet_
 
 ``` q.save()```
 * To create choices run commads:
+
 ``` q.choice_set.create(choice_text='<Your text>', votes=0)```
 
 _Create as many choices as you want. Then look at polls and admin pages._
