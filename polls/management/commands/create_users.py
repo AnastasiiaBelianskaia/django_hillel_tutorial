@@ -6,6 +6,7 @@ User = get_user_model()
 
 
 class Command(BaseCommand):
+    help = 'Creates users for database (from 1 to 10)'
 
     def add_arguments(self, parser):
         parser.add_argument('quantity', type=int, choices=range(1, 11))

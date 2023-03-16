@@ -5,6 +5,7 @@ User = get_user_model()
 
 
 class Command(BaseCommand):
+    help = 'Deletes users from database (by id)'
 
     def add_arguments(self, parser):
         parser.add_argument('users_id', nargs="+", type=int)
